@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    margin-bottom: -40px;
+    background-color: red;
+}
+
+.element {
+    height: 200px;
+    width: 600px;
+    border: 5px solid gray;
+    background-color: black;
+}
+
+.content:after {
+    content: "";
+    display: block;
+}
+
+.footer {
+    background: orange;
+}
+
+.footer, .content:after {
+    height: 40px; 
+}
