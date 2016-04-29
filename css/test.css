@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.content {
+  min-height: 100%;
+  margin-bottom: -40px;
+  background-color: red;
+}
+
+.content:after {
+  content: "";
+  display: block;
+}
+
+.footer {
+  background: orange;
+}
+
+.footer, .content:after {
+  height: 40px;
+}
